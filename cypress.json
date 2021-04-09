@@ -1,0 +1,10 @@
+{
+  "viewportWidth": 1024,
+  "viewportHeight": 768,
+  "baseUrl": "http://www.wcaquino.me/cypress/componentes.html",
+  "testFiles": "**/*.{feature,features}",
+  "video": false
+
+
+
+}
