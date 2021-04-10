@@ -3,8 +3,9 @@
   "viewportHeight": 768,
   "baseUrl": "http://www.wcaquino.me/cypress/componentes.html",
   "testFiles": "**/*.{feature,features}",
-  "video": false
+  "video": false,
 
+  "projectId": "3c79oe"
 
 
 }
