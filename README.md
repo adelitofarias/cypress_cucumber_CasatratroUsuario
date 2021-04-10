@@ -16,7 +16,7 @@ Instale no Mac, Linux ou Windows seguindo as instruções da documentação do [
 Com todos as dependências instaladas, clone o projeto e execute esse comando:
 
 ```sh
-npx cypress run --browser chrome --no-exit
+npm run cy:runTest
 ```
 
 Pronto, o projeto será executado em sua máquina.
