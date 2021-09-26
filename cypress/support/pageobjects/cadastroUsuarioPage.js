@@ -8,16 +8,18 @@ class CadastroUsuarioPage {
         cy.visit(url)
     }
       
-    // Prencher nome
+    // Prencher nome usando dados da feature
     preencherNome(nome){
        cy.get(cadastroUsuarioLocator.campoFormNome()).type(nome);
 
     }
     
-    //Preencher sobrenome
-    preencherSobrenome(sobrenome) {
-        cy.get(cadastroUsuarioLocator.campoFormSobrenome()).type(sobrenome);
+    //Preencher sobrenome usando dados dp json
+    preencherSobrenome() {
+        cy.fixture('userData').as('user').then(function() { 
 
+            cy.get(cadastroUsuarioLocator.campoFormSobrenome()).type(this.user.sobreNome);
+        }) 
     }
 
     //marcar sexo
@@ -25,6 +27,7 @@ class CadastroUsuarioPage {
         cy.get(cadastroUsuarioLocator.radioBox()).click()
     }
 
+    //Selecionar o botão de cadastro
     clicarCadastrar(){
         cy.get(cadastroUsuarioLocator.botaoCadatrar()).click()
     }
