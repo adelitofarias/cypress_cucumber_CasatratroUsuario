@@ -10,13 +10,14 @@ And("preencher nome {string}", (nome) => {
     cadastroUsuarioPage.preencherNome(nome);
 })
 
-And("preencher sobrenome {string}", (sobrenome) => {
-    cadastroUsuarioPage.preencherSobrenome(sobrenome);
+And("preencher sobrenome Silva", () => {
+    cadastroUsuarioPage.preencherSobrenome();
 })
 
 And("marcar sexo", () => {
     cadastroUsuarioPage.clicarSexo();
 })
+
 
 When("acionar o botão de cadastro", () => {
     cadastroUsuarioPage.clicarCadastrar();
